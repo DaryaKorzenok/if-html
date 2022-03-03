@@ -1,0 +1,52 @@
+* {
+    margin: 0;
+    font-family: "Roboto", sans-serif;
+}
+.text {
+    padding-top: 120px;
+}
+.container-one {
+    height: 183px;
+    width: 100%;
+
+    font-size: 40px;
+    font-weight: 500;
+    text-align: center;
+}
+.container-two {
+    height: 378px;
+    width: 100%;
+
+    padding-top: 100px;
+    text-align: center;
+}
+hr {
+    width: 100px;
+    height: 4px;
+    background-color: #f5bd41;
+    margin-left: 47%;
+    border: none;
+}
+.img-comment {
+    display: inline-block;
+
+    width: 24%;
+}
+.img-computer {
+    display: inline-block;
+    width: 24%;
+}
+.img-headphones {
+    display: inline-block;
+    width: 24%;
+}
+.img-like {
+    display: inline-block;
+    width: 24%;
+}
+p {
+    padding-top: 50px;
+    font-size: 24px;
+    font-weight: 400;
+}
+
