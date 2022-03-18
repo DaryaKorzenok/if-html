@@ -1,6 +1,7 @@
 @import url("fonts.css");
 * {
   margin: 0;
+  box-sizing: border-box;
   font-family: "Roboto", sans-serif;
 }
 
@@ -10,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .header-content {
@@ -21,22 +22,38 @@
 
 .header-right-content {
   display: flex;
-  align-items: center;
+  flex-direction: row;
 }
 
-.stays,
-.attractions {
+.nav-content {
+  list-style: none;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+}
+
+.links {
+  text-decoration: none;
+  color: #ffffff;
   font-size: 24px;
   font-weight: 400;
-  color: #ffffff;
-  text-decoration: none;
   padding: 0 20px 0 0;
+
   position: relative;
   cursor: pointer;
-  line-height: 1.5;
 }
 
-.stays:after {
+.icons {
+  list-style: none;
+}
+
+.icon-picture {
+  padding: 0 0 0 20px;
+}
+
+.links:after {
   display: block;
   position: absolute;
   left: 0;
@@ -45,31 +62,12 @@
   background-color: #f5bd41;
   content: "";
   transition: width 0.3s ease-out;
+  margin-top: 40px;
 }
 
-.stays:hover:after,
-.stays:focus:after {
-  width: 75%;
-}
-
-.attractions:after {
-  display: block;
-  position: absolute;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-color: #f5bd41;
-  content: "";
-  transition: width 0.3s ease-out;
-}
-
-.attractions:hover:after,
-.attractions:focus:after {
-  width: 85%;
-}
-
-.Night-Theme {
-  padding: 0 20px 0 20px;
+.links:hover:after,
+.links:focus:after {
+  width: 83%;
 }
 
 .main-text {
@@ -80,47 +78,83 @@
   padding-top: 140px;
 }
 
-.instead-label {
+.form-checkin {
+  padding-top: 20px;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
+}
 
+.labels-container {
+  padding-top: 80px;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 400;
-  color: #ffffff;
 }
 
-.label-for-city,
-.label-for-date {
-  padding: 80px 30px 20px 180px;
+.label-city {
+  padding: 0 215px 0 165px;
 }
 
-.form-checkin {
+.input-wrapper {
+  width: 1240px;
+  background-color: #ffffff;
+  border-radius: 8px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  align-items: center;
 }
 
-.form-wrapper {
-  display: flex;
-  background-color: #ffffff;
-  width: 1220px;
-  height: 66px;
+.form-checkin-text-city {
+  height: 64px;
+  width: 460px;
   border-radius: 8px;
+  border: 3px solid transparent;
 }
 
-input[type="text"] {
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
-  margin: 0;
+.form-checkin-text-city:focus {
+  border: 3px solid #f5bd41;
+  outline: none;
+  cursor: pointer;
+}
+
+.form-checkin-text-date:focus {
+  border: 3px solid #f5bd41;
+  outline: none;
+  cursor: pointer;
   padding: 0;
 }
 
-input[type="text"]:focus {
+.form-checkin-text-amount:focus {
   border: 3px solid #f5bd41;
   outline: none;
-  height: 60px;
   cursor: pointer;
+}
+
+.form-checkin-text-date {
+  height: 64px;
+  width: 261px;
+  border: 1px solid #cecece;
+  border-radius: 8px;
+}
+
+.form-checkin-text-amount {
+  height: 64px;
+  width: 324px;
+  border-radius: 8px;
+  border: 3px solid transparent;
+}
+
+.button-search-form {
+  width: 195px;
+  border-radius: 8px;
+  border-color: transparent;
+  background-color: #3077c6;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 500;
 }
 
 ::placeholder {
@@ -128,38 +162,6 @@ input[type="text"]:focus {
   font-weight: 400;
   color: #000000;
   padding-left: 30px;
-}
-
-.form-checkin-text-city {
-  width: 458px;
-  height: 64px;
-  border-radius: 8px;
-  border: none;
-}
-
-.form-checkin-text-date {
-  width: 259px;
-  height: 64px;
-  border-radius: 8px;
-  border: 1px solid #cecece;
-}
-
-.form-checkin-text-amount {
-  width: 314px;
-  height: 64px;
-  border-radius: 8px;
-  border: 1px solid #cecece;
-}
-
-.button-search-form {
-  width: 192px;
-  height: 66px;
-  border-radius: 8px;
-  border-color: transparent;
-  background-color: #3077c6;
-  color: #ffffff;
-  font-size: 24px;
-  font-weight: 500;
 }
 
 .download-icons {
