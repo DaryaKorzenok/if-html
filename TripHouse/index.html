@@ -7,11 +7,13 @@
     <title>Trip House</title>
   </head>
   <body>
-    <section class="main-page">
+    <div class="main-page">
       <header class="header-content">
-        <a class="header-logo" href=""
-          ><img src="../images/triphouse-logo.png" alt="TripHouse-logo"
-        /></a>
+        <a class="header-logo" href="">
+          <svg  width="205" height="40">
+            <use xlink:href="../images/svg-sprite.svg#triphouse-logo"></use>
+          </svg>
+        </a>
         <nav class="header-right-content">
           <ul class="nav-content">
             <li>
@@ -23,114 +25,136 @@
           </ul>
           <ul class="nav-content icons">
             <li>
-              <img
-                class="icon-picture night-theme"
-                src="../images/Night-Theme-icon.svg"
-                alt="Night-Theme"
-              />
+              <svg width="30" height="30">
+                <use href="../images/svg-sprite.svg#Night-Theme-icon"></use>
+              </svg>
             </li>
             <li>
-              <img
-                class="icon-picture account-icon"
-                src="../images/Account-icon.svg"
-                alt="Account-icon"
-              />
+              <svg class="sprite-account" width="40" height="40">
+                <use href="../images/svg-sprite.svg#Account-icon"></use>
+              </svg>
             </li>
           </ul>
         </nav>
       </header>
-      <div class="main-text">
+      <h1 class="main-text">
         Discover stays <br />
         to live, work or just relax
-      </div>
-      <form action="/" method="get">
-        <div class="labels-container">
-          <label for="city-text" class="labels-main-page label-city"
-            >Your destination or hotel name</label
-          >
-          <label for="date-checkin" class="labels-main-page label-date"
-            >Check-in — Check-out</label
-          >
-          <label for="people-amount" class="labels-main-page"></label>
-        </div>
-        <div class="form-checkin">
-          <div class="input-wrapper">
-            <input
-              class="form-checkin-text-city"
-              type="text"
-              list="cities"
-              id="city-text"
-              name="text"
-              placeholder="New York"
-            />
-            <datalist id="cities">
-              <option value="Warsaw"></option>
-              <option value="Los Angeles"></option>
-              <option value="Moscow"></option>
-              <option value="Tbilisi"></option>
-              <option value="Berlin"></option>
-              <option value="London"></option>
-            </datalist>
-            <input
-              class="form-checkin-text-date"
-              type="text"
-              id="date-checkin"
-              name="date-checkin"
-              placeholder="Check-in — Check-out"
-            />
-
-            <input
-              class="form-checkin-text-amount"
-              type="text"
-              id="people-amount"
-              name="people-amount"
-              placeholder="2 Adult — 1 Children — 1 Room"
-            />
+      </h1>
+      <div class="form">
+        <form class="form-class" action="/" method="get">
+          <div class="form-city">
+            <div class="label-city">
+              <label for="city-text" class="labels-main-page"
+                >Your destination or hotel name</label
+              >
+            </div>
+            <div class="input-city">
+              <input
+                class="form-checkin-text-city"
+                type="text"
+                list="cities"
+                id="city-text"
+                name="text"
+                placeholder="New York"
+              />
+              <datalist id="cities">
+                <option value="Warsaw"></option>
+                <option value="Los Angeles"></option>
+                <option value="Moscow"></option>
+                <option value="Tbilisi"></option>
+                <option value="Berlin"></option>
+                <option value="London"></option>
+              </datalist>
+            </div>
+          </div>
+          <div class="form-date">
+            <div class="label-date">
+              <label for="date-checkin" class="labels-main-page"
+                >Check-in — Check-out</label
+              >
+            </div>
+            <div class="input-date">
+              <input
+                class="form-checkin-text-date"
+                type="date"
+                id="date-checkin"
+                name="date-checkin"
+                placeholder="Check-in — Check-out"
+              />
+            </div>
+          </div>
+          <div class="form-amount">
+            <div class="label-amount">
+              <label for="people-amount" class="labels-main-page"></label>
+            </div>
+            <div class="input-amount">
+              <input
+                class="form-checkin-text-amount"
+                type="text"
+                id="people-amount"
+                name="people-amount"
+                placeholder="2 Adult — 1 Children — 1 Room"
+              />
+            </div>
+          </div>
+          <div class="button-search">
             <button class="button-search-form" type="submit">Search</button>
           </div>
-        </div>
-      </form>
-      <div class="download-icons">
-        <a href=""
-          ><img
-            class="download-icons-image google-play"
-            src="../images/GooglePlay-download.svg"
-            alt="Get it from Google Play"
-        /></a>
-        <a href=""
-          ><img
-            class="download-icons-image app-store"
-            src="../images/AppStore-download.svg"
-            alt="Get it from App Store"
-        /></a>
+        </form>
       </div>
-    </section>
+      <div class="download-icons">
+        <a href="#" class="google-play">
+          <img src="../images/GooglePlay-download.svg" alt="GooglePlay" />
+        </a>
+        <a href="#" class="app-store">
+          <svg width="120" height="40">
+            <use xlink:href="../images/svg-sprite.svg#AppStore"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
     <section>
       <h2>What do we offer</h2>
+      <hr />
     </section>
-    <hr />
-    <section class="container">
-      <ul class="list">
+
+    <section class="container-offer">
+      <ul class="list-offer">
         <li>
-          <img src="../images/headphones.png" alt="headphones" />
+          <svg width="76" height="92">
+            <use href="../images/svg-sprite.svg#headphones"></use>
+          </svg>
           <p>Support 24/7</p>
         </li>
         <li>
-          <img src="../images/comment.png" alt="comment" />
+          <svg width="84" height="84">
+            <use href="../images/svg-sprite.svg#comment"></use>
+          </svg>
           <p>Communicate directly</p>
         </li>
         <li>
-          <img src="../images/computer.png" alt="computer" />
+          <svg width="100" height="68">
+            <use href="../images/svg-sprite.svg#computer"></use>
+          </svg>
           <p>Book online</p>
         </li>
         <li>
-          <img src="../images/like.png" alt="like" />
+          <svg width="92" height="84">
+            <use href="../images/svg-sprite.svg#like"></use>
+          </svg>
           <p>Real guests reviews</p>
         </li>
       </ul>
     </section>
-    <footer>
+    <footer class="footer">
+      <a class="footer-logo" href="">
+        <svg  width="98" height="19">
+          <use xlink:href="../images/svg-sprite.svg#triphouse-logo"></use>
+        </svg>
+      </a>
       <div class="footer-container">
+
         <ul class="list-footer about">
           <li class="list-item">About</li>
           <li class="list-item">How Triphouse works</li>
@@ -153,9 +177,9 @@
           <li class="list-item">FAQ</li>
         </ul>
       </div>
-      <div class="copyright">
+      <small class="copyright">
         &#169; 2020 Triphouse, Inc. All rights reserved
-      </div>
+      </small>
     </footer>
   </body>
 </html>
