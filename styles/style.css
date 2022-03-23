@@ -13,7 +13,10 @@
   background-repeat: no-repeat;
   width: 100%;
   min-height: 100vh;
-  padding: 0 104px 0 104px;
+  padding: 0 104px 120px 104px;
+}
+.header-logo {
+  color: #3077c6;
 }
 
 .header-content {
@@ -128,11 +131,19 @@ svg.sprite-account {
 
 .form-checkin-text-date {
   border: 1px solid #cecece;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+  padding: 0 24px;
 }
 
 .form-checkin-text-city,
 .form-checkin-text-amount {
   border: 3px solid transparent;
+  font-size: 18px;
+  font-weight: 400;
+  color: #383838;
+  padding: 0 24px;
 }
 
 .button-search-form {
@@ -155,7 +166,6 @@ svg.sprite-account {
   font-size: 18px;
   font-weight: 400;
   color: #383838;
-  padding-left: 24px;
 }
 
 .form-checkin-text-city:focus {
@@ -166,7 +176,7 @@ svg.sprite-account {
 .form-checkin-text-date:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
-  padding: 0;
+
 }
 
 .form-checkin-text-amount:focus {
@@ -222,16 +232,24 @@ hr {
   margin-top: 56px;
 }
 
+.footer {
+  background-color: #10367c;
+  padding: 0 104px 0 104px;
+}
+.footer-logo {
+  color: #fff;
+  display: none;
+}
 .footer-container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  background-color: #10367c;
-  padding: 0 104px 0 104px;
+
 }
 
 .list-item {
   list-style: none;
+  white-space: nowrap;
 }
 
 .list-footer {
@@ -251,7 +269,7 @@ hr {
   display: block;
   color: #fff;
   background-color: #10367c;
-  padding: 0 104px 120px 104px;
+  padding: 0 0 120px 0;
 }
 
 @media screen and (max-width: 1199px) {
@@ -261,15 +279,21 @@ hr {
   .list-offer p {
     font-size: 22px;
   }
-  .footer-container {
-    padding: 0 80px 0 80px;
-  }
+
 }
 
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 34px;
     margin-top: 100px;
+  }
+  .list-offer {
+    flex-wrap: wrap;
+    gap: 40px 0;
+  }
+  .list-offer li {
+    flex-basis: 50%;
+
   }
   .list-offer p {
     font-size: 18px;
@@ -278,12 +302,16 @@ hr {
     margin: 80px;
     padding: 0;
   }
+  .footer {
+    padding: 40px 60px;
+  }
+
   .list-footer {
     font-size: 17px;
     padding-left: 5px;
   }
   .copyright {
-    padding: 0 70px 40px 70px;
+    padding: 0 0 40px 0;
   }
 }
 
@@ -299,6 +327,7 @@ hr {
     flex-direction: column;
     align-items: center;
     padding-left: 0;
+    gap: initial;
   }
   .list-offer li {
     margin-top: 45px;
@@ -310,9 +339,14 @@ hr {
   hr {
     display: none;
   }
+
   .footer-container {
     padding: 0;
   }
+  .footer {
+    padding: 40px 10px;
+  }
+
   .list-footer {
     padding: 0;
     margin: 40px 0 35px 0;
@@ -329,6 +363,10 @@ hr {
     text-align: center;
     padding-bottom: 40px;
   }
+  .footer-logo {
+    display: block;
+    text-align: center;
+  }
 }
 
 @media screen and (max-width: 575px) {
@@ -344,6 +382,9 @@ hr {
   }
   .container-offer {
     margin: 0 0 40px 0;
+  }
+  .footer {
+    padding: 40px 10px;
   }
   .copyright {
     font-size: 10px;
