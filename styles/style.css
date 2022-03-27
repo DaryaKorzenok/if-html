@@ -247,11 +247,6 @@ hr {
 
 }
 
-.list-item {
-  list-style: none;
-  white-space: nowrap;
-}
-
 .list-footer {
   font-size: 20px;
   font-weight: 400;
@@ -263,6 +258,11 @@ hr {
 
 .list-footer li:first-child {
   font-weight: 500;
+}
+
+.list-item {
+  list-style: none;
+  white-space: nowrap;
 }
 
 .copyright {
