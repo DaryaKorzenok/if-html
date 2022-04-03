@@ -5,7 +5,6 @@
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-
 .main-page {
   background-image: url("../images/background-main-page.png");
   background-position: center;
@@ -18,18 +17,15 @@
 .header-logo {
   color: #3077c6;
 }
-
 .header-content {
   display: flex;
   justify-content: space-between;
   padding-top: 51px;
 }
-
 .header-right-content {
   display: flex;
   flex-direction: row;
 }
-
 .nav-content {
   list-style: none;
   text-decoration: none;
@@ -38,39 +34,41 @@
   align-items: center;
   padding: 0;
 }
-
 .links {
-  text-decoration: none;
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
   margin: 0 24px 0 0;
-  position: relative;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
+  line-height: 1.5;
+  display: block;
+  text-decoration: none;
 }
-
+.links:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #f5bd41;
+  transition: width 0.3s ease-in-out;
+}
+.links:focus:after,
+.links:active:after {
+  width: 100%;
+}
 .icons {
   list-style: none;
 }
-
 svg.sprite-account {
   margin-left: 24px;
 }
-
-.links:hover {
-  border-bottom: 3px solid #f5bd41;
-}
-
 .main-text {
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
   margin-top: 196px;
-  margin-bottom: 80px;
-  line-height: 58px;
+  margin-bottom: 80px
 }
-
 .form-class {
   display: flex;
   flex-direction: row;
@@ -78,47 +76,38 @@ svg.sprite-account {
   align-items: flex-end;
   width: 100%;
 }
-
 .form-city,
 .form-date,
 .form-amount {
   display: flex;
   flex-direction: column;
 }
-
 .form-city {
   width: 37%;
 }
-
 .form-date {
   width: 21%;
 }
-
 .form-amount {
   width: 26%;
 }
-
 .button-search {
   width: 16%;
 }
-
 .input-city,
 .input-date,
 .input-amount,
 .button-search {
   background-color: white;
 }
-
 .input-city {
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
-
 .button-search {
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }
-
 .form-checkin-text-city,
 .form-checkin-text-amount,
 .form-checkin-text-date,
@@ -128,7 +117,6 @@ svg.sprite-account {
   outline: none;
   border-radius: 8px;
 }
-
 .form-checkin-text-date {
   border: 1px solid #cecece;
   font-size: 18px;
@@ -136,7 +124,6 @@ svg.sprite-account {
   color: #383838;
   padding: 0 24px;
 }
-
 .form-checkin-text-city,
 .form-checkin-text-amount {
   border: 3px solid transparent;
@@ -145,7 +132,6 @@ svg.sprite-account {
   color: #383838;
   padding: 0 24px;
 }
-
 .button-search-form {
   font-size: 24px;
   color: #fff;
@@ -153,7 +139,6 @@ svg.sprite-account {
   background-color: #3077c6;
   border: none;
 }
-
 .label-city,
 .label-date {
   font-size: 18px;
@@ -161,63 +146,59 @@ svg.sprite-account {
   color: #fff;
   padding: 0 0 24px 24px;
 }
-
 ::placeholder {
   font-size: 18px;
   font-weight: 400;
   color: #383838;
 }
-
 .form-checkin-text-city:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
 }
-
 .form-checkin-text-date:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
-
 }
-
 .form-checkin-text-amount:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
 }
-
 .download-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 90px;
 }
-
 .google-play,
 .app-store {
   margin-right: 20px;
 }
-
 h2 {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
+}
+.offer-text {
   margin-top: 120px;
   line-height: 2.3;
 }
-
-hr {
-  width: 6%;
+.homes-guests-text {
+  margin-bottom: 104px;
+  margin-top: 120px;
+}
+.offer-text:after {
+  content: "";
+  display: block;
   height: 4px;
-  background-color: #f5bd41;
-  border: none;
+  background: #f5bd41;
+  width: 6%;
   margin-left: 47%;
 }
-
 .container-offer {
   margin-top: 120px;
   margin-bottom: 120px;
   padding: 0 104px 0 104px;
 }
-
 .list-offer {
   list-style: none;
   display: flex;
@@ -225,13 +206,46 @@ hr {
   text-align: center;
   align-items: flex-end;
 }
-
 .list-offer p {
   font-size: 24px;
   font-weight: 400;
   margin-top: 56px;
 }
-
+.HomesGuests-container {
+  background-color: #eaf0f9;
+  padding-bottom: 120px;
+}
+.homesGuests-wrapper {
+  position: relative;
+  padding: 0 104px 0 104px;
+}
+.homes-guests-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  gap: 25px;
+}
+.home-guests-pic {
+  width: 100%;
+}
+.button-homes {
+  position: absolute;
+  left: 92%;
+  top: 27%;
+}
+.hotels-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #3077c6;
+  margin-top: 24px;
+}
+.cities-text {
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 24px;
+  color: #bfbfbf;
+}
 .footer {
   background-color: #10367c;
   padding: 0 104px 0 104px;
@@ -244,14 +258,11 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
-
 .list-item {
   list-style: none;
   white-space: nowrap;
 }
-
 .list-footer {
   font-size: 20px;
   font-weight: 400;
@@ -260,28 +271,62 @@ hr {
   margin: 120px 0 64px 0;
   width: 70%;
 }
-
 .list-footer li:first-child {
   font-weight: 500;
 }
-
 .copyright {
   display: block;
   color: #fff;
   background-color: #10367c;
   padding: 0 0 120px 0;
 }
-
-@media screen and (max-width: 1199px) {
-  h2 {
-    font-size: 36px;
+@media screen and (max-width: 1400px) {
+  .hotels-text {
+    font-size: 18px;
+    margin-top: 15px;
   }
+  .cities-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .button-homes {
+    position: absolute;
+    left: 92%;
+    top: 30%;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .homes-guests-text {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 80px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .hotels-text {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+  .button-homes {
+    top: 30%;
+  }
+
   .list-offer p {
     font-size: 22px;
   }
-
 }
-
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 34px;
@@ -293,7 +338,6 @@ hr {
   }
   .list-offer li {
     flex-basis: 50%;
-
   }
   .list-offer p {
     font-size: 18px;
@@ -301,6 +345,29 @@ hr {
   .container-offer {
     margin: 80px;
     padding: 0;
+  }
+  .homes-guests-text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 28px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 80px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .hotels-text {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .homes-guests-list li:nth-child(4) {
+    display: none;
   }
   .footer {
     padding: 40px 60px;
@@ -314,7 +381,6 @@ hr {
     padding: 0 0 40px 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .list-offer p {
     font-size: 20px;
@@ -336,17 +402,39 @@ hr {
     margin-top: 34px;
     margin-bottom: 40px;
   }
-  hr {
+  .offer-text:after {
     display: none;
   }
-
+  .homes-guests-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 56px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .button-homes {
+    width: 40px;
+    height: 40px;
+    top: 32%;
+  }
+  .hotels-text {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 12px;
+    margin-top: 4px;
+  }
   .footer-container {
     padding: 0;
   }
   .footer {
     padding: 40px 10px;
   }
-
   .list-footer {
     padding: 0;
     margin: 40px 0 35px 0;
@@ -368,7 +456,6 @@ hr {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 575px) {
   .list-offer p {
     font-size: 15px;
@@ -383,6 +470,18 @@ hr {
   .container-offer {
     margin: 0 0 40px 0;
   }
+  .homes-guests-list li:nth-child(3) {
+    display: none;
+  }
+  .button-homes {
+    width: 33px;
+    height: 33px;
+    left: 91%;
+  }
+  .homesGuests-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
   .footer {
     padding: 40px 10px;
   }
@@ -390,5 +489,15 @@ hr {
     font-size: 10px;
     text-align: center;
     padding: 0 0 40px 0;
+  }
+}
+@media screen and (max-width: 380px) {
+  .button-homes {
+    width: 28px;
+    height: 28px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
