@@ -5,7 +5,6 @@
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
 }
-
 .main-page {
   background-image: url("../images/background-main-page.png");
   background-position: center;
@@ -18,18 +17,15 @@
 .header-logo {
   color: #3077c6;
 }
-
 .header-content {
   display: flex;
   justify-content: space-between;
   padding-top: 51px;
 }
-
 .header-right-content {
   display: flex;
   flex-direction: row;
 }
-
 .nav-content {
   list-style: none;
   text-decoration: none;
@@ -38,39 +34,41 @@
   align-items: center;
   padding: 0;
 }
-
 .links {
-  text-decoration: none;
   color: #ffffff;
   font-size: 24px;
   font-weight: 400;
   margin: 0 24px 0 0;
-  position: relative;
   cursor: pointer;
-  border-bottom: 3px solid transparent;
+  line-height: 1.5;
+  display: block;
+  text-decoration: none;
 }
-
+.links:after {
+  display: block;
+  content: "";
+  height: 3px;
+  width: 0;
+  background-color: #f5bd41;
+  transition: width 0.3s ease-in-out;
+}
+.links:focus:after,
+.links:active:after {
+  width: 100%;
+}
 .icons {
   list-style: none;
 }
-
 svg.sprite-account {
   margin-left: 24px;
 }
-
-.links:hover {
-  border-bottom: 3px solid #f5bd41;
-}
-
 .main-text {
   font-size: 50px;
   font-weight: 500;
   color: #ffffff;
   margin-top: 196px;
   margin-bottom: 80px;
-  line-height: 58px;
 }
-
 .form-class {
   display: flex;
   flex-direction: row;
@@ -78,47 +76,38 @@ svg.sprite-account {
   align-items: flex-end;
   width: 100%;
 }
-
 .form-city,
 .form-date,
 .form-amount {
   display: flex;
   flex-direction: column;
 }
-
 .form-city {
   width: 37%;
 }
-
 .form-date {
   width: 21%;
 }
-
 .form-amount {
   width: 26%;
 }
-
 .button-search {
   width: 16%;
 }
-
 .input-city,
 .input-date,
 .input-amount,
 .button-search {
   background-color: white;
 }
-
 .input-city {
   border-bottom-left-radius: 8px;
   border-top-left-radius: 8px;
 }
-
 .button-search {
   border-bottom-right-radius: 8px;
   border-top-right-radius: 8px;
 }
-
 .form-checkin-text-city,
 .form-checkin-text-amount,
 .form-checkin-text-date,
@@ -128,7 +117,6 @@ svg.sprite-account {
   outline: none;
   border-radius: 8px;
 }
-
 .form-checkin-text-date {
   border: 1px solid #cecece;
   font-size: 18px;
@@ -136,7 +124,6 @@ svg.sprite-account {
   color: #383838;
   padding: 0 24px;
 }
-
 .form-checkin-text-city,
 .form-checkin-text-amount {
   border: 3px solid transparent;
@@ -145,7 +132,6 @@ svg.sprite-account {
   color: #383838;
   padding: 0 24px;
 }
-
 .button-search-form {
   font-size: 24px;
   color: #fff;
@@ -153,7 +139,6 @@ svg.sprite-account {
   background-color: #3077c6;
   border: none;
 }
-
 .label-city,
 .label-date {
   font-size: 18px;
@@ -161,63 +146,59 @@ svg.sprite-account {
   color: #fff;
   padding: 0 0 24px 24px;
 }
-
 ::placeholder {
   font-size: 18px;
   font-weight: 400;
   color: #383838;
 }
-
 .form-checkin-text-city:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
 }
-
 .form-checkin-text-date:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
-
 }
-
 .form-checkin-text-amount:focus {
   border: 3px solid #f5bd41;
   cursor: pointer;
 }
-
 .download-icons {
   display: flex;
   flex-direction: row;
   justify-content: center;
   margin-top: 90px;
 }
-
 .google-play,
 .app-store {
   margin-right: 20px;
 }
-
 h2 {
   font-size: 40px;
   font-weight: 500;
   text-align: center;
+}
+.offer-text {
   margin-top: 120px;
   line-height: 2.3;
 }
-
-hr {
-  width: 6%;
+.homes-guests-text {
+  margin-bottom: 104px;
+  margin-top: 120px;
+}
+.offer-text:after {
+  content: "";
+  display: block;
   height: 4px;
-  background-color: #f5bd41;
-  border: none;
+  background: #f5bd41;
+  width: 6%;
   margin-left: 47%;
 }
-
 .container-offer {
   margin-top: 120px;
   margin-bottom: 120px;
   padding: 0 104px 0 104px;
 }
-
 .list-offer {
   list-style: none;
   display: flex;
@@ -225,13 +206,162 @@ hr {
   text-align: center;
   align-items: flex-end;
 }
-
 .list-offer p {
   font-size: 24px;
   font-weight: 400;
   margin-top: 56px;
 }
-
+.HomesGuests-container {
+  background-color: #eaf0f9;
+  padding-bottom: 120px;
+}
+.homesGuests-wrapper {
+  position: relative;
+  padding: 0 104px 0 104px;
+}
+.homes-guests-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  gap: 25px;
+}
+.home-guests-pic {
+  width: 100%;
+}
+.button-homes {
+  position: absolute;
+  left: 92%;
+  top: 27%;
+}
+.hotels-text {
+  font-weight: 400;
+  font-size: 24px;
+  color: #3077c6;
+  margin-top: 24px;
+}
+.cities-text {
+  font-weight: 400;
+  font-size: 24px;
+  margin-top: 24px;
+  color: #bfbfbf;
+}
+.best-dest-heading {
+  margin-bottom: 104px;
+}
+.best-dest-cont {
+  padding: 120px 104px;
+}
+.best-dest-but-cont {
+  width: 50%;
+  min-height: 64px;
+  background-color: #f3f3f4;
+  display: flex;
+  flex-direction: row;
+  border-radius: 8px;
+}
+.best-dest-but {
+  width: 100%;
+  border: none;
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.best-dest-but:nth-child(4) {
+  display: none;
+}
+.best-dest-but:active,
+.best-dest-but:focus {
+  background-color: #3077c6;
+  color: #fff;
+  transition: 0.3s ease-in-out;
+  border-radius: 8px;
+}
+.best-dest-text {
+  font-size: 24px;
+  color: #3077c6;
+  margin-top: 24px;
+}
+.best-dest-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0;
+  margin: 66px 0;
+  gap: 25px;
+}
+.best-dest-list img {
+  width: 100%;
+}
+.button-dest {
+  margin-left: 50%;
+}
+.maldives-wrapper {
+  position: relative;
+}
+.maldives-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 99%;
+  background: rgba(56, 56, 56, 0.4);
+}
+.book-now {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  color: #3077c6;
+  font-size: 18px;
+  padding: 13px 24px;
+  border: 1px solid #3077c6;
+  cursor: pointer;
+  border-radius: 8px;
+  text-align: center;
+}
+.button-dest-right-link {
+  display: none;
+}
+.logo-sign-up {
+  display: none;
+}
+.sign-up-cont {
+  background-color: #eaf0f9;
+  margin: 0 104px;
+  padding: 24px 24px 52px 24px;
+}
+.sign-up-list {
+  display: flex;
+  flex-direction: row;
+  padding: 0;
+  justify-content: flex-start;
+}
+.sign-up-text {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 21px;
+  margin-left: 24px;
+}
+.sign-up-but {
+  padding: 13px 24px;
+  background-color: #fff;
+  border: 1px solid #3077c6;
+  color: #3077c6;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-left: 24px;
+}
+.close-link {
+  display: flex;
+  justify-content: flex-end;
+}
+.install-but {
+  display: none;
+}
 .footer {
   background-color: #10367c;
   padding: 0 104px 0 104px;
@@ -244,9 +374,11 @@ hr {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
 }
-
+.list-item {
+  list-style: none;
+  white-space: nowrap;
+}
 .list-footer {
   font-size: 20px;
   font-weight: 400;
@@ -255,37 +387,95 @@ hr {
   margin: 120px 0 64px 0;
   width: 70%;
 }
-
 .list-footer li:first-child {
   font-weight: 500;
 }
-
-.list-item {
-  list-style: none;
-  white-space: nowrap;
-}
-
 .copyright {
   display: block;
   color: #fff;
   background-color: #10367c;
   padding: 0 0 120px 0;
 }
-
+@media screen and (max-width: 1400px) {
+  .hotels-text {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+  .cities-text {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  .button-homes {
+    position: absolute;
+    left: 92%;
+    top: 30%;
+  }
+  .book-now {
+    font-size: 16px;
+    padding: 13px 12px;
+  }
+  .best-dest-but {
+    font-size: 18px;
+  }
+  .best-dest-text {
+    font-size: 18px;
+    margin-top: 15px;
+  }
+}
 @media screen and (max-width: 1199px) {
-  h2 {
-    font-size: 36px;
+  .best-dest-cont {
+    padding: 80px 65px;
+  }
+  .best-dest-heading {
+    margin-bottom: 80px;
+  }
+  .best-dest-but {
+    font-size: 16px;
+  }
+  .best-dest-text {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .sign-up-cont {
+    margin: 0 65px;
+  }
+  .homes-guests-text {
+    margin-top: 80px;
+    margin-bottom: 80px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 80px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .hotels-text {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+  .button-homes {
+    top: 30%;
   }
   .list-offer p {
     font-size: 22px;
   }
-
 }
-
 @media screen and (max-width: 991px) {
   h2 {
     font-size: 34px;
     margin-top: 100px;
+  }
+  .offer-text {
+    margin-top: 24px;
   }
   .list-offer {
     flex-wrap: wrap;
@@ -293,7 +483,6 @@ hr {
   }
   .list-offer li {
     flex-basis: 50%;
-
   }
   .list-offer p {
     font-size: 18px;
@@ -301,6 +490,69 @@ hr {
   .container-offer {
     margin: 80px;
     padding: 0;
+  }
+  .homes-guests-text {
+    margin-top: 60px;
+    margin-bottom: 60px;
+    font-size: 28px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 80px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+  .hotels-text {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 14px;
+    margin-top: 4px;
+  }
+  .homes-guests-list li:nth-child(4) {
+    display: none;
+  }
+  .best-dest-cont {
+    padding: 60px 45px;
+  }
+  .best-dest-heading {
+    margin: 0 0 60px 0;
+    font-size: 28px;
+  }
+  .best-dest-list li:nth-child(4) {
+    display: none;
+  }
+  .best-dest-but {
+    font-size: 13px;
+  }
+  .best-dest-text {
+    font-size: 14px;
+    margin-top: 8px;
+  }
+  .maldives-wrapper:before {
+    background-color: transparent;
+  }
+  .book-now {
+    display: none;
+  }
+  .best-dest-cont {
+    position: relative;
+  }
+  .button-dest {
+    display: none;
+  }
+  .button-dest-right-link {
+    display: block;
+  }
+  .button-dest-right {
+    position: absolute;
+    top: 56%;
+    left: 92%;
+  }
+  .sign-up-cont {
+    margin: 0 45px;
   }
   .footer {
     padding: 40px 60px;
@@ -314,7 +566,6 @@ hr {
     padding: 0 0 40px 0;
   }
 }
-
 @media screen and (max-width: 767px) {
   .list-offer p {
     font-size: 20px;
@@ -336,17 +587,83 @@ hr {
     margin-top: 34px;
     margin-bottom: 40px;
   }
-  hr {
+  .offer-text:after {
     display: none;
   }
-
+  .homes-guests-text {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .HomesGuests-container {
+    padding-bottom: 56px;
+  }
+  .homesGuests-wrapper {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .button-homes {
+    width: 42px;
+    height: 42px;
+    top: 28%;
+  }
+  .hotels-text {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 12px;
+    margin-top: 4px;
+  }
+  .best-dest-cont {
+    padding: 40px 35px;
+  }
+  .best-dest-heading {
+    margin: 0 0 40px 0;
+    font-size: 28px;
+  }
+  .best-dest-but {
+    font-size: 12px;
+  }
+  .best-dest-text {
+    font-size: 12px;
+    margin-top: 8px;
+  }
+  .best-dest-but-cont {
+    width: 65%;
+  }
+  .button-dest-right {
+    width: 42px;
+    height: 42px;
+    top: 56%;
+  }
+  .sign-up-cont {
+    margin: 0 35px;
+    padding: 24px;
+  }
+  .close {
+    width: 18px;
+    height: 18px;
+  }
+  .user-sign-up {
+    width: 65px;
+    height: 65px;
+  }
+  .sign-up-text {
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 21px;
+    margin-left: 20px;
+  }
+  .sign-up-but {
+    padding: 10px 20px;
+    margin-left: 20px;
+  }
   .footer-container {
     padding: 0;
   }
   .footer {
     padding: 40px 10px;
   }
-
   .list-footer {
     padding: 0;
     margin: 40px 0 35px 0;
@@ -368,7 +685,6 @@ hr {
     text-align: center;
   }
 }
-
 @media screen and (max-width: 575px) {
   .list-offer p {
     font-size: 15px;
@@ -383,6 +699,100 @@ hr {
   .container-offer {
     margin: 0 0 40px 0;
   }
+  .homes-guests-list li:nth-child(3) {
+    display: none;
+  }
+  .button-homes {
+    width: 34px;
+    height: 34px;
+    left: 91%;
+    top: 30%;
+  }
+  .homesGuests-wrapper {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .best-dest-cont {
+    padding: 40px 30px 0 30px;
+  }
+  .best-dest-li {
+    padding-bottom: 10px;
+  }
+  .best-dest-list li:nth-child(3) {
+    display: none;
+  }
+  .best-dest-but-cont {
+    width: 100%;
+    background-color: transparent;
+    min-height: 32px;
+    gap: 16px;
+  }
+  .best-dest-but:nth-child(3) {
+    display: none;
+  }
+  .best-dest-but:nth-child(4) {
+    display: block;
+  }
+  .best-dest-but {
+    border: 1px solid #f3f3f4;
+    font-size: 19px;
+    background-color: #fff;
+    padding: 5px 15px;
+  }
+  .button-dest-right {
+    width: 34px;
+    height: 34px;
+    left: 91%;
+    top: 60%;
+  }
+  .logo-sign-up {
+    display: block;
+  }
+  .user-sign-up {
+    display: none;
+  }
+  .sign-up-but {
+    display: none;
+  }
+  .sign-up-text {
+    font-size: 12px;
+
+    line-height: 1.2;
+    font-weight: 400;
+    margin: 0 18px 0 0;
+  }
+  .logo-sign-up {
+    margin-right: 18px;
+  }
+  .close {
+    margin-right: 18px;
+    width: 16px;
+    height: 16px;
+  }
+  .sign-up-cont {
+    margin: 24px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    justify-content: flex-start;
+  }
+  .text-sign-up {
+    width: 60%;
+  }
+  .sign-up-list {
+    padding: 0;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .install-but {
+    display: block;
+    color: #3077c6;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.3;
+  }
   .footer {
     padding: 40px 10px;
   }
@@ -390,5 +800,22 @@ hr {
     font-size: 10px;
     text-align: center;
     padding: 0 0 40px 0;
+  }
+}
+@media screen and (max-width: 390px) {
+  .button-homes {
+    width: 28px;
+    height: 28px;
+    left: 92%;
+  }
+  .button-dest-right {
+    width: 28px;
+    height: 28px;
+    left: 89%;
+    top: 61%;
+  }
+  .homesGuests-wrapper {
+    padding-left: 17px;
+    padding-right: 17px;
   }
 }
