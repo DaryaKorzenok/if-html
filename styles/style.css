@@ -465,6 +465,22 @@ h2 {
   .button-homes {
     top: 30%;
   }
+  .homesGuests-wrapper {
+    padding-left: 65px;
+    padding-right: 65px;
+  }
+  .hotels-text {
+    font-size: 16px;
+    margin-top: 8px;
+  }
+  .cities-text {
+    font-size: 16px;
+    margin-top: 4px;
+  }
+  .button-homes {
+    top: 30%;
+  }
+
   .list-offer p {
     font-size: 22px;
   }
