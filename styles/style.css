@@ -211,41 +211,41 @@ h2 {
   font-weight: 400;
   margin-top: 56px;
 }
-.HomesGuests-container {
-  background-color: #eaf0f9;
-  padding-bottom: 120px;
-}
-.homesGuests-wrapper {
-  position: relative;
-  padding: 0 104px 0 104px;
-}
-.homes-guests-list {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 0;
-  gap: 25px;
-}
-.home-guests-pic {
-  width: 100%;
-}
-.button-homes {
-  position: absolute;
-  left: 92%;
-  top: 27%;
-}
-.hotels-text {
-  font-weight: 400;
-  font-size: 24px;
-  color: #3077c6;
-  margin-top: 24px;
-}
-.cities-text {
-  font-weight: 400;
-  font-size: 24px;
-  margin-top: 24px;
-  color: #bfbfbf;
-}
+/*.HomesGuests-container {*/
+/*  background-color: #eaf0f9;*/
+/*  padding-bottom: 120px;*/
+/*}*/
+/*.homesGuests-wrapper {*/
+/*  position: relative;*/
+/*  padding: 0 104px 0 104px;*/
+/*}*/
+/*.homes-guests-list {*/
+/*  display: flex;*/
+/*  flex-direction: row;*/
+/*  justify-content: space-between;*/
+/*  padding: 0;*/
+/*  gap: 25px;*/
+/*}*/
+/*.home-guests-pic {*/
+/*  width: 100%;*/
+/*}*/
+/*.button-homes {*/
+/*  position: absolute;*/
+/*  left: 92%;*/
+/*  top: 27%;*/
+/*}*/
+/*.hotels-text {*/
+/*  font-weight: 400;*/
+/*  font-size: 24px;*/
+/*  color: #3077c6;*/
+/*  margin-top: 24px;*/
+/*}*/
+/*.cities-text {*/
+/*  font-weight: 400;*/
+/*  font-size: 24px;*/
+/*  margin-top: 24px;*/
+/*  color: #bfbfbf;*/
+/*}*/
 .footer {
   background-color: #10367c;
   padding: 0 104px 0 104px;
@@ -280,224 +280,224 @@ h2 {
   background-color: #10367c;
   padding: 0 0 120px 0;
 }
-@media screen and (max-width: 1400px) {
-  .hotels-text {
-    font-size: 18px;
-    margin-top: 15px;
-  }
-  .cities-text {
-    font-size: 18px;
-    margin-top: 10px;
-  }
-  .homesGuests-wrapper {
-    padding-left: 80px;
-    padding-right: 80px;
-  }
-  .button-homes {
-    position: absolute;
-    left: 92%;
-    top: 30%;
-  }
-}
-@media screen and (max-width: 1199px) {
-  .homes-guests-text {
-    margin-top: 80px;
-    margin-bottom: 80px;
-  }
-  .HomesGuests-container {
-    padding-bottom: 80px;
-  }
-  .homesGuests-wrapper {
-    padding-left: 65px;
-    padding-right: 65px;
-  }
-  .hotels-text {
-    font-size: 16px;
-    margin-top: 8px;
-  }
-  .cities-text {
-    font-size: 16px;
-    margin-top: 4px;
-  }
-  .button-homes {
-    top: 30%;
-  }
+/*@media screen and (max-width: 1400px) {*/
+/*  .hotels-text {*/
+/*    font-size: 18px;*/
+/*    margin-top: 15px;*/
+/*  }*/
+/*  .cities-text {*/
+/*    font-size: 18px;*/
+/*    margin-top: 10px;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 80px;*/
+/*    padding-right: 80px;*/
+/*  }*/
+/*  .button-homes {*/
+/*    position: absolute;*/
+/*    left: 92%;*/
+/*    top: 30%;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 1199px) {*/
+/*  .homes-guests-text {*/
+/*    margin-top: 80px;*/
+/*    margin-bottom: 80px;*/
+/*  }*/
+/*  .HomesGuests-container {*/
+/*    padding-bottom: 80px;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 65px;*/
+/*    padding-right: 65px;*/
+/*  }*/
+/*  .hotels-text {*/
+/*    font-size: 16px;*/
+/*    margin-top: 8px;*/
+/*  }*/
+/*  .cities-text {*/
+/*    font-size: 16px;*/
+/*    margin-top: 4px;*/
+/*  }*/
+/*  .button-homes {*/
+/*    top: 30%;*/
+/*  }*/
 
-  .list-offer p {
-    font-size: 22px;
-  }
-}
-@media screen and (max-width: 991px) {
-  h2 {
-    font-size: 34px;
-    margin-top: 100px;
-  }
-  .list-offer {
-    flex-wrap: wrap;
-    gap: 40px 0;
-  }
-  .list-offer li {
-    flex-basis: 50%;
-  }
-  .list-offer p {
-    font-size: 18px;
-  }
-  .container-offer {
-    margin: 80px;
-    padding: 0;
-  }
-  .homes-guests-text {
-    margin-top: 60px;
-    margin-bottom: 60px;
-    font-size: 28px;
-  }
-  .HomesGuests-container {
-    padding-bottom: 80px;
-  }
-  .homesGuests-wrapper {
-    padding-left: 45px;
-    padding-right: 45px;
-  }
-  .hotels-text {
-    font-size: 14px;
-    margin-top: 8px;
-  }
-  .cities-text {
-    font-size: 14px;
-    margin-top: 4px;
-  }
-  .homes-guests-list li:nth-child(4) {
-    display: none;
-  }
-  .footer {
-    padding: 40px 60px;
-  }
+/*  .list-offer p {*/
+/*    font-size: 22px;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 991px) {*/
+/*  h2 {*/
+/*    font-size: 34px;*/
+/*    margin-top: 100px;*/
+/*  }*/
+/*  .list-offer {*/
+/*    flex-wrap: wrap;*/
+/*    gap: 40px 0;*/
+/*  }*/
+/*  .list-offer li {*/
+/*    flex-basis: 50%;*/
+/*  }*/
+/*  .list-offer p {*/
+/*    font-size: 18px;*/
+/*  }*/
+/*  .container-offer {*/
+/*    margin: 80px;*/
+/*    padding: 0;*/
+/*  }*/
+/*  .homes-guests-text {*/
+/*    margin-top: 60px;*/
+/*    margin-bottom: 60px;*/
+/*    font-size: 28px;*/
+/*  }*/
+/*  .HomesGuests-container {*/
+/*    padding-bottom: 80px;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 45px;*/
+/*    padding-right: 45px;*/
+/*  }*/
+/*  .hotels-text {*/
+/*    font-size: 14px;*/
+/*    margin-top: 8px;*/
+/*  }*/
+/*  .cities-text {*/
+/*    font-size: 14px;*/
+/*    margin-top: 4px;*/
+/*  }*/
+/*  .homes-guests-list li:nth-child(4) {*/
+/*    display: none;*/
+/*  }*/
+/*  .footer {*/
+/*    padding: 40px 60px;*/
+/*  }*/
 
-  .list-footer {
-    font-size: 17px;
-    padding-left: 5px;
-  }
-  .copyright {
-    padding: 0 0 40px 0;
-  }
-}
-@media screen and (max-width: 767px) {
-  .list-offer p {
-    font-size: 20px;
-  }
-  h2 {
-    font-size: 32px;
-    margin-top: 24px;
-  }
-  .list-offer {
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0;
-    gap: initial;
-  }
-  .list-offer li {
-    margin-top: 45px;
-  }
-  .container-offer {
-    margin-top: 34px;
-    margin-bottom: 40px;
-  }
-  .offer-text:after {
-    display: none;
-  }
-  .homes-guests-text {
-    margin-top: 40px;
-    margin-bottom: 40px;
-  }
-  .HomesGuests-container {
-    padding-bottom: 56px;
-  }
-  .homesGuests-wrapper {
-    padding-left: 35px;
-    padding-right: 35px;
-  }
-  .button-homes {
-    width: 40px;
-    height: 40px;
-    top: 32%;
-  }
-  .hotels-text {
-    font-size: 12px;
-    margin-top: 8px;
-  }
-  .cities-text {
-    font-size: 12px;
-    margin-top: 4px;
-  }
-  .footer-container {
-    padding: 0;
-  }
-  .footer {
-    padding: 40px 10px;
-  }
-  .list-footer {
-    padding: 0;
-    margin: 40px 0 35px 0;
-    text-align: center;
-  }
-  .list-footer li {
-    display: none;
-  }
-  .list-footer li:first-child {
-    display: inline;
-    border-bottom: 1px solid #fff;
-  }
-  .copyright {
-    text-align: center;
-    padding-bottom: 40px;
-  }
-  .footer-logo {
-    display: block;
-    text-align: center;
-  }
-}
-@media screen and (max-width: 575px) {
-  .list-offer p {
-    font-size: 15px;
-    margin-top: 20px;
-  }
-  h2 {
-    font-size: 28px;
-  }
-  .list-footer li {
-    font-size: 15px;
-  }
-  .container-offer {
-    margin: 0 0 40px 0;
-  }
-  .homes-guests-list li:nth-child(3) {
-    display: none;
-  }
-  .button-homes {
-    width: 33px;
-    height: 33px;
-    left: 91%;
-  }
-  .homesGuests-wrapper {
-    padding-left: 30px;
-    padding-right: 30px;
-  }
-  .footer {
-    padding: 40px 10px;
-  }
-  .copyright {
-    font-size: 10px;
-    text-align: center;
-    padding: 0 0 40px 0;
-  }
-}
-@media screen and (max-width: 380px) {
-  .button-homes {
-    width: 28px;
-    height: 28px;
-  }
-  .homesGuests-wrapper {
-    padding-left: 17px;
-    padding-right: 17px;
-  }
-}
+/*  .list-footer {*/
+/*    font-size: 17px;*/
+/*    padding-left: 5px;*/
+/*  }*/
+/*  .copyright {*/
+/*    padding: 0 0 40px 0;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 767px) {*/
+/*  .list-offer p {*/
+/*    font-size: 20px;*/
+/*  }*/
+/*  h2 {*/
+/*    font-size: 32px;*/
+/*    margin-top: 24px;*/
+/*  }*/
+/*  .list-offer {*/
+/*    flex-direction: column;*/
+/*    align-items: center;*/
+/*    padding-left: 0;*/
+/*    gap: initial;*/
+/*  }*/
+/*  .list-offer li {*/
+/*    margin-top: 45px;*/
+/*  }*/
+/*  .container-offer {*/
+/*    margin-top: 34px;*/
+/*    margin-bottom: 40px;*/
+/*  }*/
+/*  .offer-text:after {*/
+/*    display: none;*/
+/*  }*/
+/*  .homes-guests-text {*/
+/*    margin-top: 40px;*/
+/*    margin-bottom: 40px;*/
+/*  }*/
+/*  .HomesGuests-container {*/
+/*    padding-bottom: 56px;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 35px;*/
+/*    padding-right: 35px;*/
+/*  }*/
+/*  .button-homes {*/
+/*    width: 40px;*/
+/*    height: 40px;*/
+/*    top: 32%;*/
+/*  }*/
+/*  .hotels-text {*/
+/*    font-size: 12px;*/
+/*    margin-top: 8px;*/
+/*  }*/
+/*  .cities-text {*/
+/*    font-size: 12px;*/
+/*    margin-top: 4px;*/
+/*  }*/
+/*  .footer-container {*/
+/*    padding: 0;*/
+/*  }*/
+/*  .footer {*/
+/*    padding: 40px 10px;*/
+/*  }*/
+/*  .list-footer {*/
+/*    padding: 0;*/
+/*    margin: 40px 0 35px 0;*/
+/*    text-align: center;*/
+/*  }*/
+/*  .list-footer li {*/
+/*    display: none;*/
+/*  }*/
+/*  .list-footer li:first-child {*/
+/*    display: inline;*/
+/*    border-bottom: 1px solid #fff;*/
+/*  }*/
+/*  .copyright {*/
+/*    text-align: center;*/
+/*    padding-bottom: 40px;*/
+/*  }*/
+/*  .footer-logo {*/
+/*    display: block;*/
+/*    text-align: center;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 575px) {*/
+/*  .list-offer p {*/
+/*    font-size: 15px;*/
+/*    margin-top: 20px;*/
+/*  }*/
+/*  h2 {*/
+/*    font-size: 28px;*/
+/*  }*/
+/*  .list-footer li {*/
+/*    font-size: 15px;*/
+/*  }*/
+/*  .container-offer {*/
+/*    margin: 0 0 40px 0;*/
+/*  }*/
+/*  .homes-guests-list li:nth-child(3) {*/
+/*    display: none;*/
+/*  }*/
+/*  .button-homes {*/
+/*    width: 33px;*/
+/*    height: 33px;*/
+/*    left: 91%;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 30px;*/
+/*    padding-right: 30px;*/
+/*  }*/
+/*  .footer {*/
+/*    padding: 40px 10px;*/
+/*  }*/
+/*  .copyright {*/
+/*    font-size: 10px;*/
+/*    text-align: center;*/
+/*    padding: 0 0 40px 0;*/
+/*  }*/
+/*}*/
+/*@media screen and (max-width: 380px) {*/
+/*  .button-homes {*/
+/*    width: 28px;*/
+/*    height: 28px;*/
+/*  }*/
+/*  .homesGuests-wrapper {*/
+/*    padding-left: 17px;*/
+/*    padding-right: 17px;*/
+/*  }*/
+/*}*/
