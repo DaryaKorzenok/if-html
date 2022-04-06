@@ -252,15 +252,15 @@ h2 {
 .best-dest-cont {
   padding: 120px 104px;
 }
-.best-dest-but-cont {
+.best-dest-btn-cont {
   width: 50%;
-  min-height: 64px;
   background-color: #f3f3f4;
   display: flex;
   flex-direction: row;
   border-radius: 8px;
 }
-.best-dest-but {
+.best-dest-btn {
+  padding: 17px 0 17px 0;
   width: 100%;
   border: none;
   font-size: 24px;
@@ -269,11 +269,11 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
 }
-.best-dest-but:nth-child(4) {
+.best-dest-btn:nth-child(4) {
   display: none;
 }
-.best-dest-but:active,
-.best-dest-but:focus {
+.best-dest-btn:active,
+.best-dest-btn:focus {
   background-color: #3077c6;
   color: #fff;
   transition: 0.3s ease-in-out;
@@ -283,6 +283,7 @@ h2 {
   font-size: 24px;
   color: #3077c6;
   margin-top: 24px;
+  font-weight: 400;
 }
 .best-dest-list {
   display: flex;
@@ -298,15 +299,15 @@ h2 {
 .button-dest {
   margin-left: 50%;
 }
-.maldives-wrapper {
+.best-dest-wrapper {
   position: relative;
 }
-.maldives-wrapper:before {
+.best-dest-wrapper:hover:before {
   content: "";
   display: block;
   position: absolute;
   width: 100%;
-  height: 99%;
+  height: 98.4%;
   background: rgba(56, 56, 56, 0.4);
 }
 .book-now {
@@ -322,6 +323,11 @@ h2 {
   cursor: pointer;
   border-radius: 8px;
   text-align: center;
+  opacity: 0;
+}
+.best-dest-wrapper:hover .book-now {
+  opacity: 1;
+  transition: opacity 0.3s;
 }
 .button-dest-right-link {
   display: none;
@@ -329,16 +335,28 @@ h2 {
 .logo-sign-up {
   display: none;
 }
+.install-btn {
+  display: none;
+}
 .sign-up-cont {
   background-color: #eaf0f9;
   margin: 0 104px;
   padding: 24px 24px 52px 24px;
 }
-.sign-up-list {
+.close-link-cont {
+  display: flex;
+  justify-content: flex-end;
+}
+.close-link {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 0;
+}
+.sign-up-content {
   display: flex;
   flex-direction: row;
-  padding: 0;
-  justify-content: flex-start;
+  align-items: center;
 }
 .sign-up-text {
   font-size: 24px;
@@ -346,7 +364,7 @@ h2 {
   margin-bottom: 21px;
   margin-left: 24px;
 }
-.sign-up-but {
+.sign-up-btn {
   padding: 13px 24px;
   background-color: #fff;
   border: 1px solid #3077c6;
@@ -354,13 +372,6 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 24px;
-}
-.close-link {
-  display: flex;
-  justify-content: flex-end;
-}
-.install-but {
-  display: none;
 }
 .footer {
   background-color: #10367c;
@@ -418,7 +429,7 @@ h2 {
     font-size: 16px;
     padding: 13px 12px;
   }
-  .best-dest-but {
+  .best-dest-btn {
     font-size: 18px;
   }
   .best-dest-text {
@@ -433,7 +444,7 @@ h2 {
   .best-dest-heading {
     margin-bottom: 80px;
   }
-  .best-dest-but {
+  .best-dest-btn {
     font-size: 16px;
   }
   .best-dest-text {
@@ -540,7 +551,7 @@ h2 {
   .best-dest-list li:nth-child(4) {
     display: none;
   }
-  .best-dest-but {
+  .best-dest-btn {
     font-size: 13px;
   }
   .best-dest-text {
@@ -637,14 +648,14 @@ h2 {
     margin: 0 0 40px 0;
     font-size: 28px;
   }
-  .best-dest-but {
+  .best-dest-btn {
     font-size: 12px;
   }
   .best-dest-text {
     font-size: 12px;
     margin-top: 8px;
   }
-  .best-dest-but-cont {
+  .best-dest-btn-cont {
     width: 65%;
   }
   .button-dest-right {
@@ -670,7 +681,7 @@ h2 {
     margin-bottom: 21px;
     margin-left: 20px;
   }
-  .sign-up-but {
+  .sign-up-btn {
     padding: 10px 20px;
     margin-left: 20px;
   }
@@ -737,19 +748,18 @@ h2 {
   .best-dest-list li:nth-child(3) {
     display: none;
   }
-  .best-dest-but-cont {
+  .best-dest-btn-cont {
     width: 100%;
     background-color: transparent;
-    min-height: 32px;
     gap: 16px;
   }
-  .best-dest-but:nth-child(3) {
+  .best-dest-btn:nth-child(3) {
     display: none;
   }
-  .best-dest-but:nth-child(4) {
+  .best-dest-btn:nth-child(4) {
     display: block;
   }
-  .best-dest-but {
+  .best-dest-btn {
     border: 1px solid #f3f3f4;
     font-size: 19px;
     background-color: #fff;
@@ -761,53 +771,27 @@ h2 {
     left: 91%;
     top: 60%;
   }
-  .logo-sign-up {
-    display: block;
+  .sign-up-cont {
+    margin: 0 20px;
+    padding: 15px;
   }
   .user-sign-up {
-    display: none;
-  }
-  .sign-up-but {
-    display: none;
-  }
-  .sign-up-text {
-    font-size: 12px;
-
-    line-height: 1.2;
-    font-weight: 400;
-    margin: 0 18px 0 0;
-  }
-  .logo-sign-up {
-    margin-right: 18px;
+    width: 58px;
+    height: 58px;
   }
   .close {
-    margin-right: 18px;
     width: 16px;
     height: 16px;
   }
-  .sign-up-cont {
-    margin: 24px;
-    padding: 0;
-    display: flex;
-    align-items: center;
-    background-color: transparent;
-    justify-content: flex-start;
-  }
-  .text-sign-up {
-    width: 60%;
-  }
-  .sign-up-list {
-    padding: 0;
-    align-items: center;
-    justify-content: flex-start;
-  }
-  .install-but {
-    display: block;
-    color: #3077c6;
-    font-size: 14px;
-    text-decoration: none;
+  .sign-up-text {
+    font-size: 13px;
     font-weight: 500;
-    line-height: 1.3;
+    margin-bottom: 5px;
+    margin-left: 10px;
+  }
+  .sign-up-btn {
+    padding: 5px 10px;
+    margin-left: 10px;
   }
   .footer {
     padding: 40px 10px;
@@ -833,5 +817,43 @@ h2 {
   .homesGuests-wrapper {
     padding-left: 17px;
     padding-right: 17px;
+  }
+  .logo-sign-up {
+    display: block;
+  }
+  .user-sign-up {
+    display: none;
+  }
+  .sign-up-btn {
+    display: none;
+  }
+  .install-btn {
+    display: block;
+    color: #3077c6;
+    font-size: 14px;
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 1.3;
+  }
+  .sign-up-text {
+    font-size: 12px;
+    line-height: 1.2;
+    font-weight: 400;
+    width: 65%;
+    margin-left: 16px;
+    margin-bottom: 0;
+  }
+  .sign-up-cont {
+    display: flex;
+    flex-direction: row;
+    margin: 24px 17px;
+    background-color: transparent;
+  }
+  .sign-up-right-content {
+    display: flex;
+    flex-direction: row;
+  }
+  .close {
+    margin-right: 18px;
   }
 }
