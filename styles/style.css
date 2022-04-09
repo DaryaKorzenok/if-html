@@ -1343,13 +1343,24 @@ h2 {
   }
   .navigation {
     display: block;
-    margin: 32px 0 0;
     text-align: center;
+    margin-bottom: 40px;
   }
   .navigation-black {
+    border-radius: 50%;
+    background-color: #333333;
+    border: none;
+    width: 8px;
+    height: 8px;
+    padding: 0;
     margin-right: 8px;
   }
   .navigation-none {
+    border-radius: 50%;
+    border: 1px solid #333333;
+    width: 8px;
+    height: 8px;
+    padding: 0;
     margin-right: 8px;
   }
 }
