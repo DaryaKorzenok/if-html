@@ -7,11 +7,11 @@
     <title>Trip House</title>
   </head>
   <body>
-    <div class="main-page">
+    <main class="main-page">
       <header class="header-content">
         <a class="header-logo" href="">
-          <svg  width="205" height="40">
-            <use xlink:href="../images/svg-sprite.svg#triphouse-logo"></use>
+          <svg width="205" height="40">
+            <use href="../images/svg-sprite.svg#triphouse-logo"></use>
           </svg>
         </a>
         <nav class="header-right-content">
@@ -109,14 +109,13 @@
         </a>
         <a href="#" class="app-store">
           <svg width="120" height="40">
-            <use xlink:href="../images/svg-sprite.svg#AppStore"></use>
+            <use href="../images/svg-sprite.svg#AppStore"></use>
           </svg>
         </a>
       </div>
-    </div>
+    </main>
     <section>
-      <h2>What do we offer</h2>
-      <hr />
+      <h2 class="offer-text">What do we offer</h2>
     </section>
 
     <section class="container-offer">
@@ -147,7 +146,6 @@
         </li>
       </ul>
     </section>
-
     <section class="HomesGuests-container">
       <h2 class="homes-guests-text">Homes guests loves</h2>
       <div class="homesGuests-wrapper">
@@ -189,15 +187,88 @@
             <p class="cities-text">Berlin, Germany</p>
           </li>
         </ul>
-        <svg class="button-homes" width="48" height="48">
+        <a class="button-homes-link" href="">
+          <svg class="button-homes" width="48" height="48">
+            <use href="../images/svg-sprite.svg#Button-homes"></use>
+          </svg>
+        </a>
+      </div>
+    </section>
+    <section class="best-dest-cont">
+      <h2 class="best-dest-heading">The best destinations</h2>
+      <div class="best-dest-btn-cont">
+        <button class="best-dest-btn" type="submit">Regions</button>
+        <button class="best-dest-btn" type="submit">Cities</button>
+        <button class="best-dest-btn" type="submit">Places of interest</button>
+        <button class="best-dest-btn" type="submit">Places</button>
+      </div>
+      <ul class="best-dest-list">
+        <li class="best-dest-item Maldives">
+          <div class="best-dest-wrapper">
+            <img class="pic1" src="../images/maldives-pic.svg" alt="Maldives" />
+            <button class="book-now" type="submit">Book now</button>
+          </div>
+          <h3 class="best-dest-text">Maldives</h3>
+        </li>
+        <li class="best-dest-item Spain">
+          <div class="best-dest-wrapper">
+            <img src="../images/spain-pic.svg" alt="Spain" />
+            <button class="book-now" type="submit">Book now</button>
+          </div>
+          <h3 class="best-dest-text">Spain</h3>
+        </li>
+        <li class="best-dest-item Norway">
+          <div class="best-dest-wrapper">
+            <img src="../images/norway-pic.svg" alt="Norway" />
+            <button class="book-now" type="submit">Book now</button>
+          </div>
+          <h3 class="best-dest-text">Norway</h3>
+        </li>
+        <li class="best-dest-item Island">
+          <div class="best-dest-wrapper">
+            <img src="../images/island-pic.svg" alt="Island" />
+            <button class="book-now" type="submit">Book now</button>
+          </div>
+          <h3 class="best-dest-text">Island</h3>
+        </li>
+      </ul>
+      <a class="button-dest-link" href="">
+        <svg class="button-dest" width="48" height="49">
+          <use href="../images/svg-sprite.svg#button-dest"></use>
+        </svg>
+      </a>
+      <a class="button-dest-right-link" href="">
+        <svg class="button-dest-right" width="48" height="48">
           <use href="../images/svg-sprite.svg#Button-homes"></use>
         </svg>
+      </a>
+    </section>
+    <section class="sign-up-cont">
+      <div class="close-link-cont">
+        <button class="close-link" type="submit">
+          <svg class="close" width="26" height="26">
+            <use href="../images/svg-sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="sign-up-content">
+        <svg class="user-sign-up" width="86" height="86">
+          <use href="../images/svg-sprite.svg#user-sign-up"></use>
+        </svg>
+        <svg class="logo-sign-up" width="58" height="58">
+          <use href="../images/svg-sprite.svg#logo-sign-up"></use>
+        </svg>
+        <div class="sign-up-right-content">
+          <p class="sign-up-text">Sign up and get 20% off your first booking</p>
+          <button class="sign-up-btn" type="submit">Sign up</button>
+          <a class="install-btn" href="">Install</a>
+        </div>
       </div>
     </section>
     <footer class="footer">
       <a class="footer-logo" href="">
-        <svg  width="98" height="19">
-          <use xlink:href="../images/svg-sprite.svg#triphouse-logo"></use>
+        <svg width="98" height="19">
+          <use href="../images/svg-sprite.svg#triphouse-logo"></use>
         </svg>
       </a>
       <div class="footer-container">
