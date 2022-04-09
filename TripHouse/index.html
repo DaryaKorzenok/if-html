@@ -9,8 +9,8 @@
   <body>
     <main class="main-page">
       <header class="header-content">
-        <a class="header-logo" href="">
-          <svg width="205" height="40">
+        <a class="header-logo-link" href="">
+          <svg class="header-logo" width="205" height="40">
             <use href="../images/svg-sprite.svg#triphouse-logo"></use>
           </svg>
         </a>
@@ -25,13 +25,18 @@
           </ul>
           <ul class="nav-content icons">
             <li>
-              <svg width="30" height="30">
+              <svg class="Night-Theme-icon" width="30" height="30">
                 <use href="../images/svg-sprite.svg#Night-Theme-icon"></use>
               </svg>
             </li>
             <li>
               <svg class="sprite-account" width="40" height="40">
                 <use href="../images/svg-sprite.svg#Account-icon"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="burger-menu" width="24" height="16">
+                <use href="../images/svg-sprite.svg#burger-menu"></use>
               </svg>
             </li>
           </ul>
@@ -45,7 +50,10 @@
         <form class="form-class" action="/" method="get">
           <div class="form-city">
             <div class="label-city">
-              <label for="city-text" class="labels-main-page"
+              <label for="city-text" class="labels-main-page-br city"
+                >Your destination or hotel name</label
+              >
+              <label for="city-text-mob" class="labels-main-page-mob"
                 >Your destination or hotel name</label
               >
             </div>
@@ -66,12 +74,38 @@
                 <option value="Berlin"></option>
                 <option value="London"></option>
               </datalist>
+
+              <input
+                class="form-checkin-text-city-mob"
+                type="text"
+                list="cities-mob"
+                id="city-text-mob"
+                name="text"
+                placeholder="Your destination or hotel name"
+              />
+              <datalist id="cities-mob">
+                <option value="Warsaw"></option>
+                <option value="Los Angeles"></option>
+                <option value="Moscow"></option>
+                <option value="Tbilisi"></option>
+                <option value="Berlin"></option>
+                <option value="London"></option>
+              </datalist>
+              <button class="search-btn-sprite" type="submit">
+                <svg class="sprite-search" width="16" height="16">
+                  <use href="../images/svg-sprite.svg#search-btn"></use>
+                </svg>
+              </button>
             </div>
           </div>
+
           <div class="form-date">
             <div class="label-date">
-              <label for="date-checkin" class="labels-main-page"
-                >Check-in — Check-out</label
+              <label for="date-checkin" class="labels-main-page-br"
+                >Check-in
+              </label>
+              <label for="date-checkout" class="labels-main-page-br">
+                — Check-out</label
               >
             </div>
             <div class="input-date">
@@ -80,13 +114,21 @@
                 type="date"
                 id="date-checkin"
                 name="date-checkin"
-                placeholder="Check-in — Check-out"
+                placeholder="Check-in"
+              />
+              <input
+                class="form-checkin-text-date-mob"
+                type="date"
+                id="date-checkout"
+                name="date-checkout"
+                placeholder="Check-out"
               />
             </div>
           </div>
+
           <div class="form-amount">
             <div class="label-amount">
-              <label for="people-amount" class="labels-main-page"></label>
+              <label for="people-amount" class="labels-main-page-br"></label>
             </div>
             <div class="input-amount">
               <input

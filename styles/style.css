@@ -11,7 +11,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   width: 100%;
-  min-height: 100vh;
+
   padding: 0 104px 120px 104px;
 }
 .header-logo {
@@ -27,12 +27,11 @@
   flex-direction: row;
 }
 .nav-content {
-  list-style: none;
-  text-decoration: none;
   display: flex;
-  flex-direction: row;
-  align-items: center;
+  justify-content: space-between;
   padding: 0;
+  align-items: center;
+  gap: 16px;
 }
 .links {
   color: #ffffff;
@@ -56,12 +55,15 @@
 .links:active:after {
   width: 100%;
 }
+.burger-menu {
+  display: none;
+}
 .icons {
   list-style: none;
 }
-svg.sprite-account {
-  margin-left: 24px;
-}
+/*svg.sprite-account {*/
+/*  margin-left: 24px;*/
+/*}*/
 .main-text {
   font-size: 50px;
   font-weight: 500;
@@ -94,6 +96,14 @@ svg.sprite-account {
 .button-search {
   width: 16%;
 }
+
+.input-date {
+  display: flex;
+  flex-direction: row;
+}
+.form-checkin-text-date-mob {
+  display: none;
+}
 .input-city,
 .input-date,
 .input-amount,
@@ -117,12 +127,21 @@ svg.sprite-account {
   outline: none;
   border-radius: 8px;
 }
+.form-checkin-text-city-mob {
+  display: none;
+}
+.city-text-mob {
+  display: none;
+}
+.labels-main-page-mob {
+  display: none;
+}
 .form-checkin-text-date {
   border: 1px solid #cecece;
   font-size: 18px;
   font-weight: 400;
   color: #383838;
-  padding: 0 24px;
+  text-align: center;
 }
 .form-checkin-text-city,
 .form-checkin-text-amount {
@@ -131,6 +150,9 @@ svg.sprite-account {
   font-weight: 400;
   color: #383838;
   padding: 0 24px;
+}
+.search-btn-sprite {
+  display: none;
 }
 .button-search-form {
   font-size: 24px;
@@ -169,8 +191,7 @@ svg.sprite-account {
   justify-content: center;
   margin-top: 90px;
 }
-.google-play,
-.app-store {
+.google-play {
   margin-right: 20px;
 }
 h2 {
@@ -376,7 +397,7 @@ h2 {
 .btn-guests {
   position: absolute;
   top: 22%;
-  right: 5.5%;
+  right: 5%;
 }
 .reviews-content {
   margin-top: 104px;
@@ -533,6 +554,10 @@ h2 {
   padding: 0 0 120px 0;
 }
 @media screen and (max-width: 1400px) {
+  .form-checkin-text-amount {
+    padding: 0;
+    text-align: center;
+  }
   .hotels-text {
     font-size: 18px;
     margin-top: 15px;
@@ -563,6 +588,36 @@ h2 {
   }
 }
 @media screen and (max-width: 1199px) {
+  .main-page {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+  ::placeholder {
+    font-size: 15px;
+  }
+  .form-checkin-text-date,
+  .button-search-form,
+  .labels-main-page-br {
+    font-size: 15px;
+  }
+  .main-text {
+    font-size: 30px;
+  }
+  .nav-content {
+    font-size: 18px;
+  }
+  .header-logo {
+    width: 140px;
+    height: 30px;
+  }
+  .Night-Theme-icon {
+    width: 16px;
+    height: 16px;
+  }
+  .sprite-account {
+    width: 24px;
+    height: 24px;
+  }
   .best-dest-cont {
     padding: 80px 65px;
   }
@@ -659,8 +714,33 @@ h2 {
   }
 }
 @media screen and (max-width: 991px) {
+  .main-page {
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 90px;
+  }
+  .main-text {
+    margin: 140px 0 60px;
+  }
   .offer-text {
     margin-top: 24px;
+  }
+  .form-city {
+    width: 32%;
+  }
+  .form-date {
+    width: 22%;
+  }
+  .form-amount {
+    width: 32%;
+  }
+  .button-search {
+    width: 14%;
+  }
+  .label-city,
+  .label-date {
+    padding: 0 0 10px;
+    font-size: 15px;
   }
   .list-offer {
     flex-wrap: wrap;
@@ -745,7 +825,6 @@ h2 {
   .footer {
     padding: 40px 60px;
   }
-
   .list-footer {
     font-size: 17px;
     padding-left: 5px;
@@ -797,6 +876,152 @@ h2 {
   }
 }
 @media screen and (max-width: 767px) {
+  .nav-content .links {
+    display: none;
+  }
+  .burger-menu {
+    display: block;
+  }
+  .search-btn-sprite {
+    display: block;
+  }
+  .form-checkin-text-date-mob {
+    display: block;
+  }
+  .form-class {
+    flex-direction: column;
+  }
+  .form-city,
+  .form-date,
+  .form-amount,
+  .button-search {
+    width: 100%;
+  }
+  .form-checkin-text-city-mob {
+    display: block;
+  }
+  .city-text-mob {
+    display: block;
+  }
+  .labels-main-page-mob {
+    display: block;
+  }
+  .form-checkin-text-city {
+    display: none;
+  }
+  .city-text {
+    display: none;
+  }
+  .label-city .city {
+    display: none;
+  }
+  .input-city {
+    background-color: #f5bd41;
+    border: 8px solid #f5bd41;
+    border-bottom: 4px solid #f5bd41;
+    border-radius: 1px;
+  }
+  .form-checkin-text-city-mob {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    border-color: transparent;
+    padding: 15px 0;
+    font-weight: 500;
+  }
+  ::placeholder {
+    font-weight: 500;
+    color: #383838;
+  }
+  .form-checkin-text-city-mob:focus {
+    outline: none;
+  }
+  .input-city {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .label-city {
+    display: none;
+  }
+  .search-btn-sprite {
+    border: none;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    background-color: #fff;
+    padding-left: 12px;
+  }
+  .input-date {
+    background-color: #f5bd41;
+    border: 8px solid #f5bd41;
+    border-top: 4px solid #f5bd41;
+    border-bottom: 4px solid #f5bd41;
+  }
+  .label-date {
+    display: none;
+  }
+
+  .labels-main-page-br {
+    display: none;
+  }
+  .form-checkin-text-date,
+  .form-checkin-text-date-mob {
+    width: 50%;
+    font-size: 15px;
+    color: #383838;
+    border-radius: 8px;
+  }
+  .form-checkin-text-date-mob {
+    text-align: center;
+    border: none;
+    border-left: 4px solid #f5bd41;
+  }
+  .form-checkin-text-date {
+    border: none;
+    border-right: 4px solid #f5bd41;
+    padding: 0;
+  }
+  .form-checkin-text-date:focus {
+    border: none;
+    border-right: 4px solid #f5bd41;
+    outline: none;
+  }
+  .form-checkin-text-date-mob:focus {
+    outline: none;
+  }
+  .input-amount {
+    background-color: #f5bd41;
+  }
+  .form-checkin-text-amount {
+    border: 8px solid #f5bd41;
+    border-top: 4px solid #f5bd41;
+    border-bottom: 4px solid #f5bd41;
+    border-radius: 16px;
+    text-align: left;
+    padding-left: 35px;
+    font-size: 15px;
+    font-weight: 500;
+  }
+  .form-checkin-text-amount:focus {
+    border: 8px solid #f5bd41;
+    border-top: 4px solid #f5bd41;
+    border-bottom: 4px solid #f5bd41;
+  }
+  .button-search {
+    border-radius: 0;
+    background-color: #f5bd41;
+  }
+  .button-search-form {
+    border: 8px solid #f5bd41;
+    border-top: 4px solid #f5bd41;
+    font-size: 19px;
+    padding: 1px 0;
+    border-radius: 16px;
+  }
+  .main-text {
+    margin: 70px 0 52px;
+  }
+
   .list-offer p {
     font-size: 20px;
   }
@@ -954,6 +1179,19 @@ h2 {
   }
 }
 @media screen and (max-width: 575px) {
+  .header-content {
+    padding: 12px 0 0;
+  }
+  .main-text {
+    margin: 52px 0 32px;
+  }
+  .main-page {
+    padding: 0 18px;
+  }
+  .download-icons {
+    margin-top: 60px;
+    margin-bottom: 60px;
+  }
   .list-offer p {
     font-size: 15px;
     margin-top: 20px;
@@ -1116,6 +1354,10 @@ h2 {
   }
 }
 @media screen and (max-width: 400px) {
+  .download-icons {
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
   .button-homes {
     width: 28px;
     height: 28px;
@@ -1157,7 +1399,6 @@ h2 {
     font-weight: 400;
     margin: 0;
   }
-
   .install-btn {
     font-size: 14px;
     font-weight: 500;
