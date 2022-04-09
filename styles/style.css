@@ -332,12 +332,6 @@ h2 {
 .button-dest-right-link {
   display: none;
 }
-.logo-sign-up {
-  display: none;
-}
-.install-btn {
-  display: none;
-}
 .sign-up-cont {
   background-color: #eaf0f9;
   margin: 0 104px;
@@ -372,6 +366,137 @@ h2 {
   border-radius: 8px;
   cursor: pointer;
   margin-left: 24px;
+}
+.sign-up-mobile {
+  display: none;
+}
+.guests-reviews-cont {
+  padding: 120px 0;
+}
+.btn-guests {
+  position: absolute;
+  top: 22%;
+  right: 5.5%;
+}
+.reviews-content {
+  margin-top: 104px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 84px 0 104px;
+  gap: 20px;
+  position: relative;
+}
+.guests-heading-2 {
+  display: none;
+}
+.first-col-reviews {
+  background-color: #eaf0f9;
+  width: 33%;
+}
+.guests-img {
+  width: 100%;
+}
+.guests-wrapper {
+  position: relative;
+}
+.price-hotel {
+  position: absolute;
+  opacity: 1;
+  top: 87%;
+  color: #fff;
+  margin: 16px 24px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.guests-wrapper:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 12%;
+  top: 87%;
+  background: rgba(56, 56, 56, 0.7);
+}
+.second-col-reviews {
+  margin: 24px 24px 29px 24px;
+}
+.second-col-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.second-col-2content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.second-col-2content .amount-reviews {
+  font-size: 14px;
+  font-weight: 400;
+  margin-top: 12px;
+  color: #bfbfbf;
+  line-height: 16px;
+}
+.third-col-reviews {
+  display: flex;
+  flex-direction: row;
+  margin: 0 0 22px 29px;
+}
+.country-cont {
+  display: flex;
+  flex-direction: row;
+  margin-top: 8px;
+  gap: 4px;
+}
+.country-review {
+  margin-left: 21px;
+}
+.text-country {
+  font-size: 18px;
+  font-weight: 400;
+  color: #bfbfbf;
+}
+.review {
+  margin: 0 24px 24px 24px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+.second-col-content .hotel {
+  font-size: 18px;
+  font-weight: 500;
+  color: #3077c6;
+}
+.second-col-2content .city {
+  font-weight: 400;
+  margin-top: 8px;
+  font-size: 18px;
+  color: #3077c6;
+}
+.second-col-content .mark {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 4px 11px;
+  background-color: #10367c;
+  border-radius: 8px;
+  color: #fff;
+  line-height: 24px;
+}
+.third-col-content .name {
+  font-size: 18px;
+  font-weight: 400;
+  margin-left: 21px;
+  margin-top: 5px;
+}
+.third-col-content .country {
+  color: #bfbfbf;
+  font-size: 21px;
+  margin-left: 21px;
+  font-weight: 400;
+}
+.navigation {
+  display: none;
 }
 .footer {
   background-color: #10367c;
@@ -495,12 +620,45 @@ h2 {
   .list-offer p {
     font-size: 22px;
   }
+  .guests-reviews-cont {
+    margin-top: 80px;
+    padding: 0;
+  }
+  .reviews-content {
+    margin-top: 80px;
+    padding: 0 45px 80px 65px;
+  }
+
+  .btn-guests {
+    top: 16%;
+    right: 3%;
+  }
+  .price-hotel {
+    margin: 12px 19px;
+  }
+  .second-col-content .hotel {
+    font-size: 15px;
+  }
+  .second-col-content .mark {
+    font-size: 15px;
+  }
+  .second-col-2content .city {
+    font-size: 15px;
+  }
+  .third-col-content .name {
+    font-size: 15px;
+  }
+  .second-col-2content .amount-reviews {
+    font-size: 11px;
+  }
+  .review {
+    font-size: 15px;
+  }
+  .text-country {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 991px) {
-  h2 {
-    font-size: 34px;
-    margin-top: 100px;
-  }
   .offer-text {
     margin-top: 24px;
   }
@@ -564,6 +722,9 @@ h2 {
   .book-now {
     display: none;
   }
+  .best-dest-wrapper:hover:before {
+    display: none;
+  }
   .best-dest-cont {
     position: relative;
   }
@@ -592,14 +753,52 @@ h2 {
   .copyright {
     padding: 0 0 40px 0;
   }
+  .guests-reviews-cont {
+    margin-top: 60px;
+  }
+  .reviews-content {
+    margin-top: 60px;
+    padding: 0 25px 60px 45px;
+  }
+  .guests-heading {
+    margin: 0;
+    font-size: 28px;
+  }
+  .btn-guests {
+    top: 21%;
+    right: 2%;
+  }
+  .Marocco {
+    display: none;
+  }
+  .first-col-reviews {
+    width: 50%;
+  }
+  .second-col-content .hotel {
+    font-size: 18px;
+  }
+  .second-col-content .mark {
+    font-size: 18px;
+  }
+  .second-col-2content .city {
+    font-size: 18px;
+  }
+  .third-col-content .name {
+    font-size: 18px;
+  }
+  .second-col-2content .amount-reviews {
+    font-size: 15px;
+  }
+  .review {
+    font-size: 18px;
+  }
+  .text-country {
+    font-size: 18px;
+  }
 }
 @media screen and (max-width: 767px) {
   .list-offer p {
     font-size: 20px;
-  }
-  h2 {
-    font-size: 32px;
-    margin-top: 24px;
   }
   .list-offer {
     flex-direction: column;
@@ -711,6 +910,48 @@ h2 {
     display: block;
     text-align: center;
   }
+  .guests-reviews-cont {
+    margin-top: 40px;
+  }
+  .reviews-content {
+    margin-top: 40px;
+    padding: 0 15px 40px 35px;
+  }
+  .second-col-content .hotel {
+    font-size: 13px;
+  }
+  .second-col-content .mark {
+    font-size: 13px;
+    padding: 3px 9px;
+  }
+  .second-col-2content .city {
+    font-size: 13px;
+  }
+  .third-col-content .name {
+    font-size: 13px;
+  }
+  .second-col-2content .amount-reviews {
+    font-size: 11px;
+    margin-top: 8px;
+  }
+  .review {
+    font-size: 13px;
+  }
+  .text-country {
+    font-size: 13px;
+  }
+  .second-col-reviews {
+    margin: 10px 10px 20px 10px;
+  }
+  .btn-guests {
+    top: 20%;
+    right: 1%;
+    width: 40px;
+    height: 40px;
+  }
+  .price-hotel {
+    font-size: 15px;
+  }
 }
 @media screen and (max-width: 575px) {
   .list-offer p {
@@ -801,8 +1042,80 @@ h2 {
     text-align: center;
     padding: 0 0 40px 0;
   }
+  .guests-reviews-cont {
+    background-color: #eaf0f9;
+    padding-top: 40px;
+  }
+  .reviews-content {
+    padding: 0 10px 40px 30px;
+  }
+  .Netherlands {
+    display: none;
+  }
+  .first-col-reviews {
+    width: 100%;
+  }
+  .btn-guests {
+    display: none;
+  }
+  .price-hotel {
+    display: none;
+  }
+  .guests-wrapper:before {
+    display: none;
+  }
+  .second-col-reviews {
+    margin: 12px 0 16px;
+  }
+  .third-col-reviews {
+    margin: 0 0 20px;
+  }
+  .second-col-content .hotel {
+    font-size: 15px;
+  }
+  .second-col-content .mark {
+    font-size: 15px;
+    padding: 3px 9px;
+  }
+  .second-col-2content .city {
+    font-size: 15px;
+  }
+  .third-col-content .name {
+    font-size: 15px;
+  }
+  .second-col-2content .amount-reviews {
+    font-size: 13px;
+  }
+  .review {
+    font-size: 15px;
+    margin: 0;
+  }
+  .text-country {
+    font-size: 15px;
+  }
+
+  .first-col-reviews {
+    background-color: transparent;
+  }
+  .guests-heading {
+    display: none;
+  }
+  .guests-heading-2 {
+    display: block;
+  }
+  .navigation {
+    display: block;
+    margin: 32px 0 0;
+    text-align: center;
+  }
+  .navigation-black {
+    margin-right: 8px;
+  }
+  .navigation-none {
+    margin-right: 8px;
+  }
 }
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 400px) {
   .button-homes {
     width: 28px;
     height: 28px;
@@ -811,49 +1124,63 @@ h2 {
   .button-dest-right {
     width: 28px;
     height: 28px;
-    left: 89%;
+    left: 92%;
     top: 61%;
+  }
+  .sign-up-text {
+    width: 50%;
+  }
+  .best-dest-cont {
+    padding: 40px 18px 0 18px;
   }
   .homesGuests-wrapper {
     padding-left: 17px;
     padding-right: 17px;
   }
-  .logo-sign-up {
-    display: block;
-  }
-  .user-sign-up {
+  .sign-up-cont {
     display: none;
   }
-  .sign-up-btn {
-    display: none;
+  .sign-up-mobile {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 24px 18px;
+    gap: 16px;
   }
-  .install-btn {
-    display: block;
-    color: #3077c6;
-    font-size: 14px;
-    text-decoration: none;
-    font-weight: 500;
-    line-height: 1.3;
+  .close-link-cont {
+    min-width: 20px;
+    min-height: 20px;
   }
   .sign-up-text {
     font-size: 12px;
-    line-height: 1.2;
     font-weight: 400;
-    width: 65%;
-    margin-left: 16px;
-    margin-bottom: 0;
+    margin: 0;
   }
-  .sign-up-cont {
-    display: flex;
-    flex-direction: row;
-    margin: 24px 17px;
-    background-color: transparent;
+
+  .install-btn {
+    font-size: 14px;
+    font-weight: 500;
+    color: #3077c6;
+    text-decoration: none;
   }
-  .sign-up-right-content {
-    display: flex;
-    flex-direction: row;
+  .guests-reviews-cont {
+    margin: 0;
   }
-  .close {
-    margin-right: 18px;
+  .guests-reviews-cont {
+    background-color: #eaf0f9;
+    padding-top: 40px;
+  }
+  .reviews-content {
+    padding: 0 0 40px 18px;
+  }
+  .btn-guests {
+    display: none;
+  }
+  .navigation-black {
+    margin-right: 6px;
+  }
+  .navigation-none {
+    margin-right: 6px;
   }
 }
