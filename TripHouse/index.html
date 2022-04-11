@@ -9,8 +9,8 @@
   <body>
     <main class="main-page">
       <header class="header-content">
-        <a class="header-logo" href="">
-          <svg width="205" height="40">
+        <a class="header-logo-link" href="">
+          <svg class="header-logo" width="205" height="40">
             <use href="../images/svg-sprite.svg#triphouse-logo"></use>
           </svg>
         </a>
@@ -25,13 +25,18 @@
           </ul>
           <ul class="nav-content icons">
             <li>
-              <svg width="30" height="30">
+              <svg class="Night-Theme-icon" width="30" height="30">
                 <use href="../images/svg-sprite.svg#Night-Theme-icon"></use>
               </svg>
             </li>
             <li>
               <svg class="sprite-account" width="40" height="40">
                 <use href="../images/svg-sprite.svg#Account-icon"></use>
+              </svg>
+            </li>
+            <li>
+              <svg class="burger-menu" width="24" height="16">
+                <use href="../images/svg-sprite.svg#burger-menu"></use>
               </svg>
             </li>
           </ul>
@@ -45,7 +50,10 @@
         <form class="form-class" action="/" method="get">
           <div class="form-city">
             <div class="label-city">
-              <label for="city-text" class="labels-main-page"
+              <label for="city-text" class="labels-main-page-br city"
+                >Your destination or hotel name</label
+              >
+              <label for="city-text-mob" class="labels-main-page-mob"
                 >Your destination or hotel name</label
               >
             </div>
@@ -66,12 +74,38 @@
                 <option value="Berlin"></option>
                 <option value="London"></option>
               </datalist>
+
+              <input
+                class="form-checkin-text-city-mob"
+                type="text"
+                list="cities-mob"
+                id="city-text-mob"
+                name="text"
+                placeholder="Your destination or hotel name"
+              />
+              <datalist id="cities-mob">
+                <option value="Warsaw"></option>
+                <option value="Los Angeles"></option>
+                <option value="Moscow"></option>
+                <option value="Tbilisi"></option>
+                <option value="Berlin"></option>
+                <option value="London"></option>
+              </datalist>
+              <button class="search-btn-sprite" type="submit">
+                <svg class="sprite-search" width="16" height="16">
+                  <use href="../images/svg-sprite.svg#search-btn"></use>
+                </svg>
+              </button>
             </div>
           </div>
+
           <div class="form-date">
             <div class="label-date">
-              <label for="date-checkin" class="labels-main-page"
-                >Check-in — Check-out</label
+              <label for="date-checkin" class="labels-main-page-br"
+                >Check-in
+              </label>
+              <label for="date-checkout" class="labels-main-page-br">
+                — Check-out</label
               >
             </div>
             <div class="input-date">
@@ -80,13 +114,21 @@
                 type="date"
                 id="date-checkin"
                 name="date-checkin"
-                placeholder="Check-in — Check-out"
+                placeholder="Check-in"
+              />
+              <input
+                class="form-checkin-text-date-mob"
+                type="date"
+                id="date-checkout"
+                name="date-checkout"
+                placeholder="Check-out"
               />
             </div>
           </div>
+
           <div class="form-amount">
             <div class="label-amount">
-              <label for="people-amount" class="labels-main-page"></label>
+              <label for="people-amount" class="labels-main-page-br"></label>
             </div>
             <div class="input-amount">
               <input
@@ -153,7 +195,7 @@
           <li class="homes-guests-item">
             <img
               class="home-guests-pic"
-              src="../images/homes-pic1.svg"
+              src="../images/homes-pic1.jpg"
               alt="Hotel Leopold"
             />
             <p class="hotels-text">Hotel Leopold</p>
@@ -162,7 +204,7 @@
           <li class="homes-guests-item">
             <img
               class="home-guests-pic"
-              src="../images/homes-pic2.svg"
+              src="../images/homes-pic2.jpg"
               alt="Apartment Sunshine"
             />
             <p class="hotels-text">Apartment Sunshine</p>
@@ -171,7 +213,7 @@
           <li class="homes-guests-item">
             <img
               class="home-guests-pic"
-              src="../images/homes-pic3.svg"
+              src="../images/homes-pic3.jpg"
               alt="Villa Kunerad"
             />
             <p class="hotels-text">Villa Kunerad</p>
@@ -180,7 +222,7 @@
           <li class="homes-guests-item">
             <img
               class="home-guests-pic"
-              src="../images/homes-pic4.svg"
+              src="../images/homes-pic4.jpg"
               alt="Hostel Friendship"
             />
             <p class="hotels-text">Hostel Friendship</p>
@@ -205,28 +247,28 @@
       <ul class="best-dest-list">
         <li class="best-dest-item Maldives">
           <div class="best-dest-wrapper">
-            <img class="pic1" src="../images/maldives-pic.svg" alt="Maldives" />
+            <img class="pic1" src="../images/maldives-pic.jpg" alt="Maldives" />
             <button class="book-now" type="submit">Book now</button>
           </div>
           <h3 class="best-dest-text">Maldives</h3>
         </li>
         <li class="best-dest-item Spain">
           <div class="best-dest-wrapper">
-            <img src="../images/spain-pic.svg" alt="Spain" />
+            <img src="../images/spain-pic.jpg" alt="Spain" />
             <button class="book-now" type="submit">Book now</button>
           </div>
           <h3 class="best-dest-text">Spain</h3>
         </li>
         <li class="best-dest-item Norway">
           <div class="best-dest-wrapper">
-            <img src="../images/norway-pic.svg" alt="Norway" />
+            <img src="../images/norway-pic.jpg" alt="Norway" />
             <button class="book-now" type="submit">Book now</button>
           </div>
           <h3 class="best-dest-text">Norway</h3>
         </li>
         <li class="best-dest-item Island">
           <div class="best-dest-wrapper">
-            <img src="../images/island-pic.svg" alt="Island" />
+            <img src="../images/island-pic.jpg" alt="Island" />
             <button class="book-now" type="submit">Book now</button>
           </div>
           <h3 class="best-dest-text">Island</h3>
@@ -274,7 +316,7 @@
               <p class="price-hotel">From 250 USD</p>
               <img
                 class="guests-img"
-                src="../images/bali.svg"
+                src="../images/bali.jpg"
                 alt="Ubud Bali Resort&SPA"
               />
             </div>
@@ -311,20 +353,6 @@
               advice.
             </p>
           </div>
-          <div class="navigation">
-            <svg class="navigation-black" width="8" height="8">
-              <use href="../images/svg-sprite.svg#navigation-black"></use>
-            </svg>
-            <svg class="navigation-none" width="8" height="8">
-              <use href="../images/svg-sprite.svg#navigation-none"></use>
-            </svg>
-            <svg class="navigation-none" width="8" height="8">
-              <use href="../images/svg-sprite.svg#navigation-none"></use>
-            </svg>
-            <svg class="navigation-none" width="8" height="8">
-              <use href="../images/svg-sprite.svg#navigation-none"></use>
-            </svg>
-          </div>
         </div>
         <div class="first-col-reviews Netherlands">
           <div class="first-img-cont">
@@ -332,7 +360,7 @@
               <p class="price-hotel">From 40 USD</p>
               <img
                 class="guests-img"
-                src="../images/king-kong.svg"
+                src="../images/king-kong.jpg"
                 alt="King Kong hostel"
               />
             </div>
@@ -376,7 +404,7 @@
               <p class="price-hotel">From 100 USD</p>
               <img
                 class="guests-img"
-                src="../images/rokoko-hotel.svg"
+                src="../images/rokoko-hotel.jpg"
                 alt="Rokoko Hotel"
               />
             </div>
@@ -420,8 +448,21 @@
           </svg>
         </a>
       </div>
+      <div class="navigation">
+        <button class="navigation-black">
+          <span></span>
+        </button>
+        <button class="navigation-none">
+          <span></span>
+        </button>
+        <button class="navigation-none">
+          <span></span>
+        </button>
+        <button class="navigation-none">
+          <span></span>
+        </button>
+      </div>
     </section>
-
     <section class="sign-up-mobile">
       <div class="close-link-cont">
         <button class="close-link" type="submit">
